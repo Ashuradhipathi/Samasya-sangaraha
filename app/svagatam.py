@@ -1,5 +1,6 @@
 import streamlit as st
 from rag import insert_problem
+from image_loader import render_image
 
 
 # Home Page
@@ -21,7 +22,7 @@ def main():
     # Columns for pages
     samara, sangraha = st.columns(2)
 
-    samara.image("https://github.com/Ashuradhipathi/Samasya-sangraha/blob/main/app/assets/svagatam_samara.jpg")
+    samara.image(render_image("assets/svagatam_samara.jpg"))
 
     samara.markdown(
         "_Samara_ meaning battle contains a search box that lets you put in a topic such as students, challenged etc and retrieves problems, use cases"
@@ -30,7 +31,7 @@ def main():
     sangraha.markdown(
         "_Sangraha_ meaning collection conatins all the problems entered through the application depicted as a table."
     )
-    sangraha.image("https://github.com/Ashuradhipathi/Samasya-sangraha/blob/main/app/assets/svagatam_sangraha.jpg")
+    sangraha.image(render_image("assets/svagatam_sangraha.jpg"))
 
     # Page links
     sangraha.page_link("pages/sangraha.py", label="Catalogue Page", icon="🚨")

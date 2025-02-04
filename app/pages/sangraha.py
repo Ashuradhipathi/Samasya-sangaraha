@@ -1,11 +1,12 @@
 import streamlit as st
 import pandas as pd
 from mongo import retrieve_all
+from image_loader import render_image
 
 
 def main():
     # Bg image
-    st.image("https://github.com/Ashuradhipathi/Samasya-sangraha/blob/main/app/assets/Sangraha_bg.jpg", use_container_width=True)
+    st.image(render_image("assets/Sangraha_bg.jpg"), use_container_width=True)
 
     records = []
 
