@@ -9,7 +9,7 @@ def main():
 
     # Bg image
     bg_image = st.container()
-    bg_image.image("assets/samara.png")
+    bg_image.image("https://github.com/Ashuradhipathi/Samasya-sangraha/blob/main/app/assets/samara.png")
 
     # Query
     query = st.text_input("What do you want to solve?")

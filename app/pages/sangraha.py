@@ -5,7 +5,7 @@ from mongo import retrieve_all
 
 def main():
     # Bg image
-    st.image("assets/Sangraha_bg.jpg", use_container_width=True)
+    st.image("https://github.com/Ashuradhipathi/Samasya-sangraha/blob/main/app/assets/Sangraha_bg.jpg", use_container_width=True)
 
     records = []
 
