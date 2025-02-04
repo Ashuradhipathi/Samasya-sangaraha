@@ -10,7 +10,7 @@ def main():
 
     # Bg image
     bg_image = st.container()
-    bg_image.image(render_image("assets/samara.png"))
+    bg_image.image(render_image('assets/samara.png'))
 
     # Query
     query = st.text_input("What do you want to solve?")
